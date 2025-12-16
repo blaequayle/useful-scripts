@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/ns/ttml"
+    xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+    xmlns:podcasts="http://podcasts.apple.com/transcript-ttml-internal">
+  <body>
+    <div>
+      <p ttm:agent="SPEAKER_1">
+        <span begin="00:00:00.000" end="00:00:02.000" podcasts:unit="sentence">
+          <span begin="00:00:00.000" end="00:00:00.500" podcasts:unit="word">Welcome</span>
+          <span begin="00:00:00.500" end="00:00:01.000" podcasts:unit="word">to</span>
+          <span begin="00:00:01.000" end="00:00:01.500" podcasts:unit="word">the</span>
+          <span begin="00:00:01.500" end="00:00:02.000" podcasts:unit="word">show.</span>
+        </span>
+        <span begin="00:00:02.000" end="00:00:04.000" podcasts:unit="sentence">
+          <span begin="00:00:02.000" end="00:00:02.500" podcasts:unit="word">We</span>
+          <span begin="00:00:02.500" end="00:00:03.000" podcasts:unit="word">start</span>
+          <span begin="00:00:03.000" end="00:00:03.500" podcasts:unit="word">with</span>
+          <span begin="00:00:03.500" end="00:00:04.000" podcasts:unit="word">news.</span>
+        </span>
+        <span begin="00:00:04.000" end="00:00:06.000" podcasts:unit="sentence">
+          <span begin="00:00:04.000" end="00:00:04.400" podcasts:unit="word">Additions</span>
+          <span begin="00:00:04.400" end="00:00:04.800" podcasts:unit="word">and</span>
+          <span begin="00:00:04.800" end="00:00:06.000" podcasts:unit="word">Corrections.</span>
+        </span>
+        <span begin="00:00:06.000" end="00:00:09.000" podcasts:unit="sentence">
+          <span begin="00:00:06.000" end="00:00:06.500" podcasts:unit="word">Correction</span>
+          <span begin="00:00:06.500" end="00:00:07.000" podcasts:unit="word">one:</span>
+          <span begin="00:00:07.000" end="00:00:07.500" podcasts:unit="word">we</span>
+          <span begin="00:00:07.500" end="00:00:08.000" podcasts:unit="word">misstated</span>
+          <span begin="00:00:08.000" end="00:00:08.500" podcasts:unit="word">the</span>
+          <span begin="00:00:08.500" end="00:00:09.000" podcasts:unit="word">date.</span>
+        </span>
+        <span begin="00:00:09.000" end="00:00:12.000" podcasts:unit="sentence">
+          <span begin="00:00:09.000" end="00:00:09.500" podcasts:unit="word">Addition</span>
+          <span begin="00:00:09.500" end="00:00:10.000" podcasts:unit="word">two:</span>
+          <span begin="00:00:10.000" end="00:00:10.500" podcasts:unit="word">new</span>
+          <span begin="00:00:10.500" end="00:00:11.000" podcasts:unit="word">resource</span>
+          <span begin="00:00:11.000" end="00:00:11.500" podcasts:unit="word">link</span>
+          <span begin="00:00:11.500" end="00:00:12.000" podcasts:unit="word">posted.</span>
+        </span>
+      </p>
+    </div>
+  </body>
+</tt>
