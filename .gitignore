@@ -11,3 +11,5 @@ transcripts/*.ttml
 
 # Virtual environments
 .venv
+
+.env
