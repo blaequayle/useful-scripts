@@ -6,10 +6,11 @@ from openai import OpenAI
 from utils import extract_apple_ttml_transcript
 
 
-def summarize_ttml(path: str) -> str | None:
+def summarize_ttml(episode_number: int) -> str | None:
     """Summarize the podcast transcript from the given TTML file path.
     Requires OPENAI_API_KEY environment variable to be set."""
-    transcript = extract_apple_ttml_transcript(path)
+    print(f"Summarising episode number: {episode_number}")
+    transcript = extract_apple_ttml_transcript(f"transcripts/{episode_number}.ttml")
     client = OpenAI()
     prompt = textwrap.dedent(f"""
         You are a podcast summarizer.
@@ -34,7 +35,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("episode_number", type=int)
     args = parser.parse_args()
-    summarize_ttml(f"transcripts/{args.episode_number}.ttml")
+    summarize_ttml(args.episode_number)
 
 
 if __name__ == "__main__":
