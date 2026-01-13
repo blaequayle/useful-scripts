@@ -1,3 +1,11 @@
-**Project name**: Talking Rubbish Podcast Summariser
-**Purpose**: Takes a TTML transcript file available from the Apple Podcast App and outputs a summarised version of the key takeaways.
-**Caveats**: Rubbish Talk is removed from the transcript to reduce the number of tokens passed to the prompt. The idea is not to summarise the full podcast, just to pull out some useful tips and tricks to share with a local neighbourhood recycling group.
+### Talking Rubbish Podcast Summariser
+
+#### Purpose 
+To take a TTML transcript file (available from the Apple Podcast App) and output a summarised version of the key takeaways
+
+#### Caveats 
+Rubbish Talk is removed from the transcript to reduce the number of tokens passed to the prompt. 
+The idea is not to summarise the full podcast, just to pull out some useful tips and tricks to share with a local neighbourhood recycling group.
+
+#### Running the script
+The transcript to be summarised should be in ttml format, named `<episode number>.ttml` and placed in the transcripts folder. The script can be run from the command line - the episode number needs to be passed as the first and only positional argument.
