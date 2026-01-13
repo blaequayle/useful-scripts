@@ -28,5 +28,5 @@ def summarize_ttml(path: str) -> str:
 
 
 if __name__ == "__main__":
-    summary = summarize_ttml("transcripts/72.ttml")
+    summary = summarize_ttml("transcripts/73.ttml")
     print("Podcast Summary:\n", summary)
