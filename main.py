@@ -1,3 +1,4 @@
+import argparse
 import textwrap
 
 from openai import OpenAI
@@ -5,7 +6,7 @@ from openai import OpenAI
 from utils import extract_apple_ttml_transcript
 
 
-def summarize_ttml(path: str) -> str:
+def summarize_ttml(path: str) -> str | None:
     """Summarize the podcast transcript from the given TTML file path.
     Requires OPENAI_API_KEY environment variable to be set."""
     transcript = extract_apple_ttml_transcript(path)
@@ -24,9 +25,17 @@ def summarize_ttml(path: str) -> str:
         messages=[{"role": "user", "content": prompt}],
         temperature=0.4,
     )
-    return response.choices[0].message.content
+    summary = response.choices[0].message.content
+    print("Podcast Summary:\n", summary)
+    return summary
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("episode_number", type=int)
+    args = parser.parse_args()
+    summarize_ttml(f"transcripts/{args.episode_number}.ttml")
 
 
 if __name__ == "__main__":
-    summary = summarize_ttml("transcripts/73.ttml")
-    print("Podcast Summary:\n", summary)
+    main()
