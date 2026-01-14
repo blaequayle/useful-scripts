@@ -1,5 +1,5 @@
 ## Useful Scripts
-Currently this repo contains a code relating to a single use case:
+Currently this repo contains code relating to a single use case:
 
 ### 1. Talking Rubbish Podcast Summariser
 #### Purpose 
